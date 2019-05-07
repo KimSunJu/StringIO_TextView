@@ -42,7 +42,7 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(32, 60);
+            this.btnEdit.Location = new System.Drawing.Point(32, 65);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(220, 40);
             this.btnEdit.TabIndex = 1;
