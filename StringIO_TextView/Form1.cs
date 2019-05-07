@@ -11,9 +11,20 @@ namespace StringIO_TextView
 {
     public partial class Form1 : Form
     {
+        string orgStr = "";
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
