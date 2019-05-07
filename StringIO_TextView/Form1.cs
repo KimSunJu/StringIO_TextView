@@ -39,9 +39,21 @@ namespace StringIO_TextView
             else
             {
                 MessageBox.Show("텍스트를 입력하세요!", "알림",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.txtEdit.Focus();
                 return false;
+            }
+        }
+
+        private void txtEdit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == 13)
+            {
+                if (TextCheck())
+                {
+                    e.Handled = true;
+                    this.lblResult.Text = OrgStr + this.txtEdit.Text;
+                }
             }
         }
     }
